@@ -11,6 +11,8 @@
 .blockDivs {
   color: var(--text);
   padding: 10px;
+  display: flex;
+  flex-direction: column-reverse;
 }
 .blockDivs > * {
   border: 1px solid;

@@ -1,0 +1,171 @@
+:root {
+  --text: #f0f6fc;
+  --background: #161b22;
+}
+/* Code to show Flexbox */
+/*  This styling sets up the flex container. Remember, `display: flex;` enables the DIRECT children of that element/container to be flex items */
+
+/* Activity 1 */
+/* Set Up a Flex Container so that the items within .blockDivs are flex items oriented in a vertical direction */
+
+.blockDivs {
+  color: var(--text);
+  padding: 10px;
+}
+.blockDivs > * {
+  border: 1px solid;
+  padding: 0.5rem 0.5rem;
+}
+
+
+header {
+  background: url(assets/img/photo-1528334713982-2d1fe11a157a.jpg) center center no-repeat;  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 40vh;
+
+}
+
+#jumbotron{
+  text-decoration: none;
+  color: var(--text);
+  background-color: var(--background);
+  font-size: 1.5em;
+  padding: 1rem;
+  border-radius: 10px;
+  text-align: center;
+}
+
+#jumbotron > h2 {
+  text-align: center;
+}
+#jumbotron > p {
+  text-decoration: none;
+  background-color: white;
+  font-size: 1.5em;
+  padding: 1.5rem;
+  border-radius: 10px;
+}
+form {
+  border: solid 1px var(--text);
+  /* display: flex;
+  flex-direction: column; */
+  /* margin: 1rem 1rem; */
+  color: var(--text)
+}
+form > * {
+  margin: 0.5rem;
+}
+main {
+background-color: var(--background);
+}
+main h2,h1,p{
+  color: var(--text);
+}
+
+/* Media Queries */
+@media (max-width: 549px){
+  .hidden--mobile {
+    display: none !important;
+  }
+
+  nav {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+
+  }
+
+  nav > i {
+    padding: 1rem;
+    font-size: 2em;
+  }
+
+  nav > ul {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    padding: 0 0;
+  }
+
+  nav > ul > li {
+    padding: 0.5rem;
+    list-style-type: none;
+  }
+}
+
+@media (min-width: 550px) {
+  nav > ul {
+    display: flex;
+    justify-content: space-evenly;
+    padding: 0 0;
+  }
+
+  nav > ul > li {
+    display: inline-block;
+    text-decoration: none;
+    border: 1px solid;
+    padding: 0.5rem 0.5rem;
+    border-radius: 25px;
+    background-color: var(--text);;
+  }
+
+  nav > .fa-bars {
+    display: none;
+  }
+}
+/* Code to show CSS Element Positioning, specifically absolute and fixed */
+.position {
+  background-color: var(--text);
+  display: none;
+  /* position:fixed; */
+}
+/* Code below this line is purely for stylization purposes, but feel free to ask questions about certain aspects */
+body {
+  background-color: var(--background);
+}
+main {
+  padding: 0px 5px;
+}
+.explanation {
+  font-size: 1.5em;
+  /* text-align: center; */
+}
+footer {
+  border-top: solid 1px var(--text);;
+  padding: 1rem 1rem 1rem;
+  margin: 1rem 1rem;
+  color: var(--text);
+}
+.position > p {
+  text-align: center;
+  color: var(--background);
+  padding: 20px;
+}
+
+#blocks {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 1.2em;
+  height: auto;
+  width: 92.5%;
+  margin: auto;
+  border-collapse: collapse;
+  color: var(--text)
+}
+#blocks, td, th, tr {
+  border: 1px solid var(--text);
+}
+#blocks tbody {
+  width: 100%;
+}
+
+#blocks th {
+  text-align: left;
+}
+
+#blocks td,th {
+  width: 25%;
+
+}
